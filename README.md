@@ -46,7 +46,7 @@ npm run dev
     </code></pre>
 
   <h2>Acesse a documentação da API:</h2>
-    <p>Abra seu navegador e vá até <a href="http://localhost:3000/api-docs/">http://localhost:3000/api-docs/</a> para visualizar a documentação gerada pelo Swagger.</p>
+    <p>Abra seu navegador e vá até <a href="http://localhost:3001/api-docs/">http://localhost:3000/api-docs/</a> para visualizar a documentação gerada pelo Swagger.</p>
 
   <h3>Versão do Node.js:</h3>
     <p>Este projeto foi desenvolvido utilizando a versão <strong>v22.11.0</strong> do Node.js.</p>
