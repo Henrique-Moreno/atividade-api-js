@@ -23,7 +23,7 @@ O objetivo deste projeto é fornecer uma solução simples e eficaz para gerenci
 - **CORS**: Para permitir requisições entre diferentes origens.
 - **Swagger**: Para documentação da API.
         
-<h3>Instruções para Configurar e Executar o Projeto</h3>
+<h2>Instruções para Configurar e Executar o Projeto</h2>
 
   <h3>Clone o repositório:</h3>
   <pre><code>
@@ -46,7 +46,26 @@ npm run dev
     </code></pre>
 
   <h2>Acesse a documentação da API:</h2>
-    <p>Abra seu navegador e vá até <a href="http://localhost:3001/api-docs/">http://localhost:3000/api-docs/</a> para visualizar a documentação gerada pelo Swagger.</p>
+    <p>Abra seu navegador e vá até <a href="http://localhost:3001/api-docs/">http://localhost:3001/api-docs/</a> para visualizar a documentação gerada pelo Swagger.</p>
+
+<h2>Uso do Docker</h2>
+    <h3>Construir a Imagem Docker</h3>
+    <p>Para executar a aplicação em um contêiner Docker, você precisará criar uma imagem usando o <code>Dockerfile</code>. </p>
+    <h3>Construir a imagem:</h3>
+    <pre>
+        <code>docker build -t tarefa-api .</code>
+    </pre>
+    <h3>Executar o Contêiner Docker</h3>
+    <p>Após construir a imagem, você pode executar um contêiner baseado nessa imagem com o seguinte comando:</p>
+    <pre>
+        <code>docker run -p 3000:3000 tarefa-api</code>
+    </pre>
+    <p>O parâmetro <code>-p 3000:3000</code> mapeia a porta <code>3000</code> do contêiner para a porta <code>3000</code> da sua máquina local.</p>
+    <h2>Executar em Modo Destacado (Opcional)</h2>
+    <p>Se você quiser executar o contêiner em segundo plano (modo destacado), adicione a opção <code>-d</code> ao comando <code>docker run</code>:</p>
+    <pre>
+        <code>docker run -d -p 3000:3000 tarefa-api</code>
+    </pre>
 
   <h3>Versão do Node.js:</h3>
     <p>Este projeto foi desenvolvido utilizando a versão <strong>v22.11.0</strong> do Node.js.</p>
