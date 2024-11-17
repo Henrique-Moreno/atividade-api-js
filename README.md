@@ -61,7 +61,7 @@ npm run dev
         <code>docker run -p 3000:3000 tarefa-api</code>
     </pre>
     <p>O parâmetro <code>-p 3000:3000</code> mapeia a porta <code>3000</code> do contêiner para a porta <code>3000</code> da sua máquina local.</p>
-    <h2>Executar em Modo Destacado (Opcional)</h2>
+    <h2>Executar em Modo (Opcional)</h2>
     <p>Se você quiser executar o contêiner em segundo plano (modo destacado), adicione a opção <code>-d</code> ao comando <code>docker run</code>:</p>
     <pre>
         <code>docker run -d -p 3000:3000 tarefa-api</code>
